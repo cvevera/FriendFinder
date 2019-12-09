@@ -1,8 +1,11 @@
+var friendsData = require("..data/friends")
+
+
 app.get("/api/friends", function(req, res) {
-    res.json(tableData);
+    res.json(friendsData);
   });
 
   app.post("/api/friends", function(req, res) {
-      tableData.push(req.body);
+      friendsData.push(req.body);
       res.json(true);
   });
