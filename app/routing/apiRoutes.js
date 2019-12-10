@@ -23,10 +23,13 @@ app.post("/api/friends", function(req, res) {
             console.log(friendsData[i])
           totalDifference = 0;
 
-            for (var j = 0; j < friendsData[i].scores[j]; j++){
+            for (var j = 0; j < friendsData[i].scores[i]; j++){
 
-                totalDifference == Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j]));
-                console.log(Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j])));
+                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j]));
+                // console.log(Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j])));
+                // console.log(indivDifference)
+                // totalDifference = totalDifference + indivDifference;
+                console.log("total diference is :" + totalDifference)
                 if (totalDifference <= match.difference) {
 
                     match.name = friendsData[i].name;

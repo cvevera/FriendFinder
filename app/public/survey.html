@@ -8,21 +8,18 @@
     <title>Friend Finder Survey</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
-    <div class="container">
-        <img id="matchPhoto">
-        <p id="matchInfo"></p>
     </div>
     <div class="container" id="survey">
         <h2>Survey Questions</h2>
@@ -43,7 +40,7 @@
             <option value="5">Five(Strongly Agree)</option>
         </select>
         <h3>Question 2</h3>
-        <h4>You would always rather go out to eat with friends instead of cooking at home.</h4>
+        <h4>The Lord of the Rings is the greatest cinematic masterpiece of all time.</h4>
         <select class="custom-select custom-select-lg mb-3" id="question2">
             <option selected>Open this select menu</option>
             <option value="1">One(Strongly Disagree)</option>
@@ -53,7 +50,7 @@
             <option value="5">Five(Strongly Agree)</option>
         </select>
         <h3>Question 3</h3>
-        <h4>You would always rather go out to eat with friends instead of cooking at home.</h4>
+        <h4>It's pronounced "gif" not "gif".</h4>
         <select class="custom-select custom-select-lg mb-3" id="question3">
             <option selected>Open this select menu</option>
             <option value="1">One(Strongly Disagree)</option>
@@ -63,7 +60,7 @@
             <option value="5">Five(Strongly Agree)</option>
         </select>
         <h3>Question 4</h3>
-        <h4>You would always rather go out to eat with friends instead of cooking at home.</h4>
+        <h4>Calzones are dumb.</h4>
         <select class="custom-select custom-select-lg mb-3" id="question4">
             <option selected>Open this select menu</option>
             <option value="1">One(Strongly Disagree)</option>
@@ -73,7 +70,7 @@
             <option value="5">Five(Strongly Agree)</option>
         </select>
         <h3>Question 5</h3>
-        <h4>You would always rather go out to eat with friends instead of cooking at home.</h4>
+        <h4>You don't understand they hype around "Old Town Road".</h4>
         <select class="custom-select custom-select-lg mb-3" id="question5">
             <option selected>Open this select menu</option>
             <option value="1">One(Strongly Disagree)</option>
@@ -83,8 +80,48 @@
             <option value="5">Five(Strongly Agree)</option>
         </select>
         <h3>Question 6</h3>
-        <h4>You would always rather go out to eat with friends instead of cooking at home.</h4>
+        <h4>We don't deserve dogs.</h4>
         <select class="custom-select custom-select-lg mb-3" id="question6">
+            <option selected>Open this select menu</option>
+            <option value="1">One(Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five(Strongly Agree)</option>
+        </select>
+        <h3>Question 7</h3>
+        <h4>Americans should switch to a 32 hour work week.</h4>
+        <select class="custom-select custom-select-lg mb-3" id="question7">
+            <option selected>Open this select menu</option>
+            <option value="1">One(Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five(Strongly Agree)</option>
+        </select>
+        <h3>Question 8</h3>
+        <h4>Read the above question and then answer "5" if you didn't.</h4>
+        <select class="custom-select custom-select-lg mb-3" id="question8">
+            <option selected>Open this select menu</option>
+            <option value="1">One(Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five(Strongly Agree)</option>
+        </select>
+        <h3>Question 9</h3>
+        <h4>Sometimes whiskey in your coffee is okay on a Monday morning.</h4>
+        <select class="custom-select custom-select-lg mb-3" id="question9">
+            <option selected>Open this select menu</option>
+            <option value="1">One(Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five(Strongly Agree)</option>
+        </select>
+        <h3>Question 10</h3>
+        <h4>Back end development is way more fun that front end!</h4>
+        <select class="custom-select custom-select-lg mb-3" id="question10">
             <option selected>Open this select menu</option>
             <option value="1">One(Strongly Disagree)</option>
             <option value="2">Two</option>
@@ -105,8 +142,8 @@
                     <h3 class="modal-title">Here's Your Match!</h1>
                 </div>
                 <div class="modal-body">
-                    <h2 id="matchInfo"></h2>
-                    <img id="matchPhoto" src="#">
+                    <h2 class="matchInfo"></h2>
+                    <img class="matchPhoto" src="#" style="height: 400px" style= "width: 300px">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -128,18 +165,22 @@
                 $("#question3").val(),
                 $("#question4").val(),
                 $("#question5").val(),
-                $("#question6").val()
+                $("#question6").val(),
+                $("#question7").val(),
+                $("#question8").val(),
+                $("#question9").val(),
+                $("#question10").val()
             ]
         };
         $.post("/api/friends", newFriend,
             function (data) {
 
-                $("#matchInfo").text(data.name);
-                $("#matchPhoto").attr("src", data.photo);
+                $(".matchInfo").text(data.name);
+                $(".matchPhoto").attr("src", data.photo);
                 console.log("Your new friends is " + data.name)
                 $("#resultsModal").modal("toggle");
 
-               
+
                 console.log(newFriend)
             });
     });
