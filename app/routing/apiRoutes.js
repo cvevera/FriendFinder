@@ -11,7 +11,7 @@ app.post("/api/friends", function(req, res) {
         var match = {
             name: "",
             photo: "",
-            difference: 1000
+            difference: 50
         };
 
         var userinputs = req.body
@@ -23,11 +23,12 @@ app.post("/api/friends", function(req, res) {
             console.log(friendsData[i])
           totalDifference = 0;
 
-            for (var j = 0; j < friendsData[i].scores[i]; j++){
+            for (var j = 0; j < friendsData[i].scores[j]; j++){
 
                 totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j]));
-                // console.log(Math.abs(parseInt(userScores[j]) - parseInt(friendsData[i].scores[j])));
+
                 // console.log(indivDifference)
+
                 // totalDifference = totalDifference + indivDifference;
                 console.log("total diference is :" + totalDifference)
                 if (totalDifference <= match.difference) {
@@ -39,8 +40,6 @@ app.post("/api/friends", function(req, res) {
                 }
             }
         }
-
-
 
       friendsData.push(userinputs);
       console.log(match)

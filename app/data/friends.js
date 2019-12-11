@@ -12,7 +12,7 @@ var friends = [
     {
         name: "Peter",
         photo: "https://images.pexels.com/photos/35065/homeless-man-color-poverty.jpg?cs=srgb&dl=beard-elderly-face-35065.jpg&fm=jpg",
-        scores: [5,3,4,2,1,5,4,3,2,5]
+        scores: [1,1,1,1,1,1,1,1,1,1]
     },
     {
         name: "Rodger",
